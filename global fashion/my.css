@@ -1,0 +1,77 @@
+:root{
+    --orange:#ffa500
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--orange);
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background-color: rgb(204, 22, 22);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+
+header .navbar a{
+    color: white;
+    font-size: 2rem;
+    margin: 0.8rem;
+    cursor: pointer;
+}
+
+header .navbar a:hover{
+    color: orange;
+}
+
+.fill-form{
+    background-color: transparent;
+    
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: .1rem solid white;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: black;
+    border: .1rem solid;
+}
+
+section{
+    margin-top: 13rem;
+    background-color: black;
+    background-position: center;
+    color: white;
+}
